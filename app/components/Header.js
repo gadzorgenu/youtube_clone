@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
      width:25,
      height: 25,
      borderRadius: 35,
-     paddingTop: 2
+     marginTop: 4
     }
 });
 
