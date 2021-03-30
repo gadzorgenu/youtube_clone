@@ -1,0 +1,5 @@
+home = 'home'
+explore = 'compass'
+subscription = 'youtube-subscription'
+Notification = 'bell'
+library = 'play-box-multiple'
