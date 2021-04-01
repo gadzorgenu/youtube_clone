@@ -20,20 +20,17 @@ const Card = ({
     <View style={styles.container}>
         <Image
             style={styles.image}
-            source={{ uri: imageUrl}}
-            // source={require('../assets/photo.jpg')}
+            source={imageUrl}
         />
         <View style={styles.detailsContainer}>
             <Image
-                // source={ require('../assets/jacket.jpg')}
-                source={{ uri: logo}}
+                source={logo}
                 style={styles.logo} 
             />
             <View style={styles.subDetail}>
                 <AppText style={styles.title} 
                     numberOfLines={2}
                 >
-                   {/* 10 PHOTOGRAPHY IDEAS at HOME (quarantine) */}
                     {title}
                 </AppText>
                 <View style={styles.details}>
@@ -66,7 +63,7 @@ const styles = StyleSheet.create({
  },
  detailsContainer: {
      padding: 12,
-     flexDirection: 'row'
+     flexDirection: 'row',
  },
  logo: {
     width: 40,
@@ -76,7 +73,7 @@ const styles = StyleSheet.create({
  details: {
      flexDirection: 'row',
      color: 'gray',
-     fontSize: 8
+     fontSize: 7
  },
   sub :{
     fontSize: 12
@@ -85,7 +82,7 @@ const styles = StyleSheet.create({
     paddingLeft: 10
  },
  title: {
-     fontSize: 20
+     fontSize: 16
  }
 });
 
