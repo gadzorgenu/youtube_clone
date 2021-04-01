@@ -20,34 +20,31 @@ const Card = ({
     <View style={styles.container}>
         <Image
             style={styles.image}
-            // source={{ uri: imageUrl}}
-            source={require('../assets/photo.jpg')}
+            source={{ uri: imageUrl}}
+            // source={require('../assets/photo.jpg')}
         />
         <View style={styles.detailsContainer}>
             <Image
-                source={ require('../assets/jacket.jpg')}
-                // source={{ uri: logo}}
+                // source={ require('../assets/jacket.jpg')}
+                source={{ uri: logo}}
                 style={styles.logo} 
             />
             <View style={styles.subDetail}>
                 <AppText style={styles.title} 
                     numberOfLines={2}
                 >
-                   10 PHOTOGRAPHY IDEAS at HOME (quarantine)
-                    {/* {title} */}
+                   {/* 10 PHOTOGRAPHY IDEAS at HOME (quarantine) */}
+                    {title}
                 </AppText>
                 <View style={styles.details}>
                     <AppText style={styles.sub}>
-                        Jordi Koalitic <Text as='span'>. </Text>
-                        {/* { author} */}
+                    { author} <Text as='span'>. </Text>
                     </AppText>
                     <AppText style={styles.sub}>
-                        {/* {views}  */}
-                       24M views <Text as='span'>. </Text>
+                        {views} views <Text as='span'>. </Text>
                     </AppText>
                     <AppText style={styles.sub}>
-                        {/* {duration}  */}
-                        11 months ago 
+                        {duration}  ago 
                     </AppText>
                 </View>
             </View>
