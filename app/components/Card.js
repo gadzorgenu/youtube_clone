@@ -55,7 +55,8 @@ const styles = StyleSheet.create({
  container: {
      marginBottom: 5,
      overflow: 'hidden',
-     backgroundColor: colors.white
+     backgroundColor: colors.white,
+     width: '100%'
  },
  image: {
      width: '100%',

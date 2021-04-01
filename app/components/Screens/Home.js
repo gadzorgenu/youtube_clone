@@ -16,7 +16,7 @@ const data = [
               id: 2,
               imageUrl: require('../../assets/engineer.jpg'),
               logo: require('../../assets/engineer.jpg'),
-              title: '5 things I Wish I Knew Before Becoming    a Software Engineer',
+              title: '5 things I Wish I Knew Before Becoming a Software Engineer',
               author: 'Keep On Coding',
               views: '442k',
               duration: '1 year'
