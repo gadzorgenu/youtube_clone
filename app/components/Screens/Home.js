@@ -1,6 +1,6 @@
 import React from 'react';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
-import Card from '../Card';
+import Card from '../HomeCard';
 
 const data = [
        {
@@ -64,10 +64,8 @@ function Home() {
                         views={item.views}
                         duration={item.duration}
                      />
-                     // <Text> HI</Text>
               }
         />
-       //  <Card />
  )
 }
 
