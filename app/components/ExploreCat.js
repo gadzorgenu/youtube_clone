@@ -9,10 +9,10 @@ import AppText from './AppText';
 function ExploreCat({ bgImage, title, icon}) {
     return (
         <View style={styles.container}>
-            <ImageBackground source={require('../assets/music.jpg')} style={styles.img}>
+            <ImageBackground source={bgImage} style={styles.img}>
             <View style={styles.comp}>
-                    <MaterialCommunityIcons name='music' style={{ color: colors.white, paddingRight: 10}} size={20}>
-                        <AppText as='span' style={styles.text}>Music</AppText>
+                    <MaterialCommunityIcons name={icon} style={{ color: colors.white}} size={28}>
+                        <AppText as='span' style={styles.text}>{title}</AppText>
                     </MaterialCommunityIcons>
                 </View> 
             </ImageBackground>
@@ -30,18 +30,20 @@ const styles = StyleSheet.create({
     resizeMode: 'cover',
     justifyContent: 'center',
     width: '65%',
-    height: 60,
+    height: 50,
     borderRadius: 20
 
  },
  comp: {
     // flexDirection: 'row'
-    padding: 10
+    paddingTop: 5,
+    paddingLeft: 10
  },
  text: {
      color: colors.white,
-     fontSize:15,
-     paddingLeft: 10
+     fontSize:18,
+     fontWeight: 'bold',
+     paddingLeft: 10,
  }
 });
 
