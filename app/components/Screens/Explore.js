@@ -1,10 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import ExploreCat from '../ExploreCat';
 
 function Explore() {
  return (
-<Text style={styles.container}> Explore</Text>
-);
+        <ExploreCat />
+        // <Text>hi</Text>
+ )
 }
 
 const styles = StyleSheet.create({

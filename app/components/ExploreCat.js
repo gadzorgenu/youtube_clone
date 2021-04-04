@@ -1,6 +1,6 @@
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import React from 'react';
-import { ImageBackground, StyleSheet, View } from 'react-native';
+import { ImageBackground, Text,StyleSheet, View } from 'react-native';
 
 //components
 import colors from '../config/colors';
@@ -9,11 +9,12 @@ import AppText from './AppText';
 function ExploreCat({ bgImage, title, icon}) {
     return (
         <View style={styles.container}>
-            <ImageBackground source={bgImage} style={styles.img}>
-                <View style={styles.comp}>
-                    <MaterialCommunityIcons name={icon} style={{ color: colors.white}} size={24}/>
-                    <AppText style={styles.text}>{title}</AppText>
-                </View>
+            <ImageBackground source={require('../assets/music.jpg')} style={styles.img}>
+            <View style={styles.comp}>
+                    <MaterialCommunityIcons name='music' style={{ color: colors.white, paddingRight: 10}} size={20}>
+                        <AppText as='span' style={styles.text}>Music</AppText>
+                    </MaterialCommunityIcons>
+                </View> 
             </ImageBackground>
         </View>
     );
@@ -21,18 +22,26 @@ function ExploreCat({ bgImage, title, icon}) {
 
 const styles = StyleSheet.create({
  container: {
-    gridTemplateColumns: 2
+    // gridTemplateColumns: 2
+    padding: 10
  },
  img: {
     flex: 1,
     resizeMode: 'cover',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    width: '65%',
+    height: 60,
+    borderRadius: 20
+
  },
  comp: {
-    flexDirection: 'row'
+    // flexDirection: 'row'
+    padding: 10
  },
  text: {
-     color: colors.white
+     color: colors.white,
+     fontSize:15,
+     paddingLeft: 10
  }
 });
 
