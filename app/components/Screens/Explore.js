@@ -36,7 +36,6 @@ function Explore() {
         />
     }
      />
-        // <Text>hi</Text>
  )
 }
 
